@@ -5,10 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/checkout.feature" afterPath="$PROJECT_DIR$/src/main/resources/checkout.feature" />
       <change beforePath="$PROJECT_DIR$/src/test/java/modules/Checkout.java" afterPath="$PROJECT_DIR$/src/test/java/modules/Checkout.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modules/Register.java" afterPath="$PROJECT_DIR$/src/test/java/modules/Register.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modules/Login.java" afterPath="$PROJECT_DIR$/src/test/java/modules/Login.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/checkout.feature" afterPath="$PROJECT_DIR$/target/classes/checkout.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/global/CommonSteps.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/modules/Checkout.class" afterPath="$PROJECT_DIR$/target/test-classes/modules/Checkout.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/modules/Login.class" afterPath="$PROJECT_DIR$/target/test-classes/modules/Login.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,21 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="checkout.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/checkout.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/modules/Checkout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="307">
+              <caret line="130" column="31" lean-forward="false" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/modules/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+            <state relative-caret-position="165">
+              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +88,8 @@
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/modules/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="164">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,11 +123,12 @@
         <option value="$PROJECT_DIR$/src/main/java/modules/Login1.java" />
         <option value="$PROJECT_DIR$/src/main/java/modules/Login.java" />
         <option value="$PROJECT_DIR$/src/main/resources/login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/modules/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/Checkout.java" />
         <option value="$PROJECT_DIR$/src/test/java/global/Base.java" />
         <option value="$PROJECT_DIR$/src/test/java/global/CommonSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/modules/Register.java" />
+        <option value="$PROJECT_DIR$/src/test/java/modules/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Globals.java" />
         <option value="$PROJECT_DIR$/src/main/resources/checkout.feature" />
         <option value="$PROJECT_DIR$/src/test/java/modules/Checkout.java" />
       </list>
@@ -505,35 +506,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__checkout - 2018.04.24 at 19h 00m 23s.xml">
+    <history-entry file="Feature__checkout - 2018.04.29 at 17h 45m 08s.xml">
       <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__checkout - 2018.04.24 at 19h 17m 51s.xml">
+    <history-entry file="Feature__checkout - 2018.04.29 at 17h 46m 34s.xml">
       <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__checkout - 2018.04.24 at 19h 23m 52s.xml">
+    <history-entry file="Feature__checkout - 2018.04.29 at 17h 47m 06s.xml">
       <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__checkout - 2018.04.29 at 16h 21m 47s.xml">
+    <history-entry file="Feature__checkout - 2018.04.29 at 17h 47m 36s.xml">
       <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__checkout - 2018.04.29 at 16h 22m 16s.xml">
+    <history-entry file="Feature__checkout - 2018.04.29 at 17h 48m 58s.xml">
       <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__checkout - 2018.04.29 at 16h 23m 17s.xml">
+    <history-entry file="Feature__checkout - 2018.04.29 at 17h 55m 13s.xml">
       <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__register - 2018.04.24 at 19h 03m 01s.xml">
-      <configuration name="Feature: register" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__checkout - 2018.04.29 at 18h 34m 34s.xml">
+      <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__register - 2018.04.24 at 19h 04m 22s.xml">
-      <configuration name="Feature: register" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__checkout - 2018.04.29 at 18h 37m 47s.xml">
+      <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ - 2018.04.24 at 18h 41m 23s.xml">
-      <configuration name="Scenario: " configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__checkout - 2018.04.29 at 18h 39m 33s.xml">
+      <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ - 2018.04.29 at 16h 19m 19s.xml">
-      <configuration name="Scenario: " configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__checkout - 2018.04.29 at 18h 48m 37s.xml">
+      <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -925,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/register.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/login.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -943,18 +936,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/modules/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        <state relative-caret-position="165">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Globales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/register.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/modules/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/modules/Checkout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="130" column="31" lean-forward="false" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -963,19 +982,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/checkout.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/modules/Checkout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

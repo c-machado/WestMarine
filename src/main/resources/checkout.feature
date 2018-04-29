@@ -8,14 +8,15 @@ Feature: Checkout
       When I type "boat shoes" in the search field
       And I click on the search button
       Then I should see results for 'boat shoes'
-      And I select "P018758987"
+      And I select "Women's Lillesand Deck Shoes"
       And I select size '6'
-      #And I add the item to the Shopping cart
-      #And I go the Shopping cart
-      #And I press the checkout button
+      And I add the item to the Shopping cart
+      And I go the Shopping cart
+      And I press the checkout button
       #And I fill out the shipping address form
-      #And I press the Save button
-      #And I choose the delivery method
-      #And I fill out the payment method form
-      #And I press the save button
-      #Then I Submit the order
+      And I press the Save button
+      And I choose the delivery method
+      And I press the delivery Save button
+      And I fill out the payment method form
+      And I press the Payment Save button
+      Then I Submit the order

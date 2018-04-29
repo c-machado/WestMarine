@@ -32,8 +32,9 @@ public class Login {
 
     @And("^I fill out the form with correct information in login form$")
     public void iFillOutTheFormWithCorrectInformationInLoginForm() throws Throwable {
+        Thread.sleep(4000);
         browser.findElement(By.id("header_j_username")).sendKeys("dcmachado@gmail.com");
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         browser.findElement(By.id("header_j_password")).sendKeys("E123?asd");
     }
 
