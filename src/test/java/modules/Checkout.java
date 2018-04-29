@@ -3,8 +3,8 @@ package modules;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import global.CommonSteps;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,13 +26,33 @@ public class Checkout{
     }
 
 
-    @When("^I type 'boat shoes' in the search field$")
-    public void iTypeBoatShoesInTheSearchField() throws Throwable {
-        browser.findElement(By.id("search")).sendKeys("boat shoes");
+    @When("^I type \"([^\"]*)\" in the search field$")
+    public void iTypeInTheSearchField(String keyword) throws Throwable {
+        browser.findElement(By.id("search")).sendKeys(keyword);
     }
 
     @And("^I click on the search button$")
     public void iClickOnTheSearchButton() throws Throwable {
         browser.findElement(By.cssSelector("form[name='search_form'] .button")).click();
     }
+
+    @Then("^I should see results for 'boat shoes'$")
+    public void iShouldSeeResultsForBoatShoes() throws Throwable {
+        browser.findElement(By.cssSelector(".total-records")).isDisplayed();
+    }
+
+    @And("^I select \"([^\"]*)\"$")
+    public void iSelect(String productId) throws Throwable {
+        browser.findElement(By.cssSelector("div[data-pcode='" + productId + "'] > .prod_grid > a")).click();
+        Assert.assertTrue("Confirming navigation to product page",browser.getCurrentUrl().contains(productId) );
+    }
+
+    @And("^I select size '(\\d+)'$")
+    public void iSelectSize(int size) throws Throwable {
+        browser.findElement(By.cssSelector("a[data-size-name='" + size + "']")).click();
+
+    }
+
+
+
 }

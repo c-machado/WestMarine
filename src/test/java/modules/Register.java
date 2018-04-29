@@ -72,4 +72,6 @@ public class Register {
         Assert.assertTrue("",browser.getPageSource().contains("Welcome back 123456!"));
 
     }
+
+
 }
