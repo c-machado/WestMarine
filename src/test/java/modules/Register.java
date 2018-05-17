@@ -1,14 +1,13 @@
 package modules;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import base.BaseClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -16,18 +15,19 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static constants.Constants.BASE_URL;
 import static java.lang.Thread.sleep;
 
-public class Register {
+public class Register extends BaseClass {
 
-    WebDriver browser = new ChromeDriver();
+    WebDriver browser = getBrowser();
     Select country;
     Select state;
     Date date = new Date();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd-HH-mm-ss");
     @Given("^I'm in WestMarine Homepage$")
     public void iMInWestMarineHomepage() throws Throwable {
-        browser.navigate().to("https://www.westmarine.com/");
+        browser.navigate().to(BASE_URL);
     }
 
     @And("^I click to sign in$")

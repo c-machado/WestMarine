@@ -1,23 +1,20 @@
 package modules;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+import base.BaseClass;
 
-public class Login {
+import static constants.Constants.BASE_URL;
 
-    WebDriver browser = new ChromeDriver();
+public class Login extends BaseClass {
 
     @Given("^I'm in WestMarine Homepage to login$")
     public void iMInWestMarineHomepageToLogin() throws Throwable {
-        browser.navigate().to("https://www.westmarine.com/");
+        browser.navigate().to(BASE_URL);
     }
 
     @And("^I click on the Sign in button in the top bar$")
