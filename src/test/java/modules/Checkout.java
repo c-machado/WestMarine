@@ -20,32 +20,12 @@ public class Checkout extends BaseClass {
         browser.navigate().to(BASE_URL);
         browser.findElement(By.linkText("Sign In")).click();
         browser.findElement(By.id("my_account_list")).isDisplayed();
-
         Thread.sleep(DEFAULT_SLEEP_TIME);
         browser.findElement(By.id("header_j_username")).sendKeys("dcmachado@gmail.com");
         Thread.sleep(DEFAULT_SLEEP_TIME);
         browser.findElement(By.id("header_j_password")).sendKeys("E123?asd");
         browser.findElement(By.cssSelector("#my_account_list .form.secondary")).click();
         Assert.assertTrue("Confirming that user is logged in",browser.getPageSource().contains("Hi 123456"));
-    }
-
-
-    @When("^I type \"([^\"]*)\" in the search field$")
-    public void iTypeInTheSearchField(String keyword) throws Throwable {
-        Thread.sleep(DEFAULT_SLEEP_TIME/2);
-        System.out.println("key in ckeckout guest"+keyword);
-        browser.findElement(By.id("search")).sendKeys(keyword);
-
-    }
-
-    @And("^I click on the search button$")
-    public void iClickOnTheSearchButton() throws Throwable {
-        browser.findElement(By.cssSelector("form[name='search_form'] .button")).click();
-    }
-
-    @Then("^I should see results for the item searched$")
-    public void iShouldSeeResultsForBoatShoes() throws Throwable {
-        browser.findElement(By.cssSelector(".total-records")).isDisplayed();
     }
 
     @And("^I select \"([^\"]*)\"$")
@@ -61,7 +41,6 @@ public class Checkout extends BaseClass {
     @And("^I select size '(\\d+)'$")
     public void iSelectSize(int size) throws Throwable {
         browser.findElement(By.cssSelector("a[data-size-name='" + size + "']")).click();
-
     }
 
     @And("^I add the item to the Shopping cart$")
@@ -80,12 +59,6 @@ public class Checkout extends BaseClass {
     @And("^I press the checkout button$")
     public void iPressTheCheckoutButton() throws Throwable {
         browser.findElement(By.id("checkoutButtonBottom")).click();
-
-    }
-
-    @Then("^I should be at the \"([^\"]*)\" page$")
-    public void iShouldBeAtThePage(String pagePath) throws Throwable {
-        Assert.assertTrue("confirming the url contains this path: "+ pagePath, browser.getCurrentUrl().contains(pagePath));
     }
 
     @And("^I press the Save button$")
@@ -153,4 +126,6 @@ public class Checkout extends BaseClass {
         browser.findElement(By.id("address.phoneNumber_del")).sendKeys("+1 718 625 4843");
         browser.findElement(By.cssSelector(".edit button.data-set-address"));
     }
+
+
 }
