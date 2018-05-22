@@ -1,5 +1,6 @@
 package common;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -40,5 +41,6 @@ public class Common extends BaseClass {
     public void afterScenario(){
         browser.quit();
     }
+
 
 }

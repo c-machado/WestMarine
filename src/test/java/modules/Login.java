@@ -1,10 +1,12 @@
 package modules;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import base.BaseClass;
@@ -14,27 +16,19 @@ import static constants.Constants.DEFAULT_SLEEP_TIME;
 
 public class Login extends BaseClass {
 
-    @Given("^I'm in WestMarine Homepage to login$")
-    public void iMInWestMarineHomepageToLogin() throws Throwable {
+    @Given("^The login form is displayed in the WestMarine Homepage$")
+    public void theLoginFormIsDisplayedInTheWestMarineHomepage() throws Throwable {
         browser.navigate().to(BASE_URL);
-    }
-
-    @And("^I click on the Sign in button in the top bar$")
-    public void iClickOnTheSignInButtonInTheTopBar() throws Throwable {
         browser.findElement(By.linkText("Sign In")).click();
-    }
-
-    @Then("^I should see the login form$")
-    public void iShouldSeeTheLoginForm() throws Throwable {
         browser.findElement(By.id("my_account_list")).isDisplayed();
     }
 
-    @And("^I fill out the login form with correct information$")
-    public void iFillOutTheFormWithCorrectInformationInLoginForm() throws Throwable {
+    @When("^I fill out the login form with \"([^\"]*)\" and \"([^\"]*)\" information$")
+    public void iFillOutTheLoginFormWithAndInformation(String username, String password) throws Throwable {
         Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_username")).sendKeys("dcmachado@gmail.com");
+        browser.findElement(By.id("header_j_username")).sendKeys(username);
         Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_password")).sendKeys("E123?asd");
+        browser.findElement(By.id("header_j_password")).sendKeys(password);
     }
 
     @When("^I click on the Sign in button in the login form$")
@@ -64,11 +58,27 @@ public class Login extends BaseClass {
             "Confirming error when login with wrong credentials",
             browser.findElement(By.xpath("//p[contains(text(),\"" + errorMessage + "\")]")).isDisplayed()
         );
+        afterScenario();
     }
 
-    @And("^I log out$")
-    public void iLogOut() throws Throwable {
+    @When("^I click the log out button$")
+    public void iClickTheLogOutButton() throws Throwable {
         browser.findElement(By.cssSelector(".user-account-menu")).click();
         browser.findElement(By.cssSelector("a[href='/logout']")).click();
     }
+
+    @Then("^The system logs me out$")
+    public void theSystemLoggedMeOut() throws Throwable {
+        Thread.sleep(DEFAULT_SLEEP_TIME/2);
+        Assert.assertTrue("confirming the user has been logged out", browser.findElement(By.linkText("Sign In")).isDisplayed());
+
+    }
+
+    @AfterClass
+    public void afterScenario(){
+        browser.quit();
+    }
+
+
+
 }
