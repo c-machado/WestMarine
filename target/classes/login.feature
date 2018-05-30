@@ -6,8 +6,6 @@ Feature: As a registered user I want to be able to login in the West Marine page
 
 
   Scenario Outline:  Successful login
-    #When I fill out the username in the login form with "<username>"
-    #And I fill out the password in the login form with "<password>"
     When I fill out the login form with "<username>" and "<password>" information
     And I click on the Sign in button in the login form
     Then I'm succesfully logged in

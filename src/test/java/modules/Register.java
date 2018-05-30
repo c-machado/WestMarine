@@ -42,9 +42,11 @@ public class Register extends BaseClass {
     public void iFillOutTheFormWithCorrectInformation() throws Throwable {
         browser.findElement(By.id("register.email")).sendKeys("dcmachadou+"+dateFormat.format(date)+"@gmail.com");
         browser.findElement(By.id("password")).sendKeys("E123?asdf");
-        browser.findElement(By.id("register.checkPwd")).sendKeys("E123?asdf");
         browser.findElement(By.id("register.firstName")).sendKeys("123456");
         browser.findElement(By.id("register.lastName")).sendKeys("123456");
+        browser.findElement(By.cssSelector("label[for='register.activeEmailOffers']")).click();
+        /*
+        browser.findElement(By.id("register.checkPwd")).sendKeys("E123?asdf");
         country = new Select(browser.findElement(By.id("address.country")));
         country.selectByValue("CA");
         browser.findElement(By.id("address.line1")).sendKeys("601 Sherwood Ave, San Bernardino");
@@ -54,18 +56,19 @@ public class Register extends BaseClass {
         state.selectByValue("CA-ON");
         browser.findElement(By.id("address.postcode")).sendKeys("111111");
         browser.findElement(By.id("register.phone")).sendKeys("545354658889088");
-
-        browser.findElement(By.cssSelector("label[for='register.activeEmailOffers']")).click();
+        */
     }
 
     @When("^I click on the Register button$")
     public void iClickOnTheRegisterButton() throws Throwable {
-        browser.findElement(By.cssSelector("#registerWithAddressForm .form.secondary")).click();
+        Assert.assertTrue("confirming the user has selected news option",
+                browser.findElement(By.id("register.activeEmailOffers")).isSelected());
+        browser.findElement(By.cssSelector("#registerWithAddressForm .form.primary")).click();
     }
 
     @Then("^I'm succesfully registered$")
     public void iMSuccesfullyRegistered() throws Throwable {
-        Assert.assertTrue("",browser.getPageSource().contains("Welcome back 123456!"));
+        Assert.assertTrue("",browser.getPageSource().contains("Thank you for completing registration!"));
 
     }
 
