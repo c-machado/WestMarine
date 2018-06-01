@@ -25,9 +25,9 @@ public class Login extends BaseClass {
 
     @When("^I fill out the login form with \"([^\"]*)\" and \"([^\"]*)\" information$")
     public void iFillOutTheLoginFormWithAndInformation(String username, String password) throws Throwable {
-        Thread.sleep(DEFAULT_SLEEP_TIME);
+        //Thread.sleep(DEFAULT_SLEEP_TIME);
         browser.findElement(By.id("header_j_username")).sendKeys(username);
-        Thread.sleep(DEFAULT_SLEEP_TIME);
+        //Thread.sleep(DEFAULT_SLEEP_TIME);
         browser.findElement(By.id("header_j_password")).sendKeys(password);
     }
 
@@ -45,9 +45,9 @@ public class Login extends BaseClass {
 
     @And("^I fill out the login form with wrong information$")
     public void iFillOutTheLoginFormWithWrongInformation() throws Throwable {
-        Thread.sleep(DEFAULT_SLEEP_TIME);
+        //Thread.sleep(DEFAULT_SLEEP_TIME);
         browser.findElement(By.id("header_j_username")).sendKeys("caro@gmail.com");
-        Thread.sleep(DEFAULT_SLEEP_TIME);
+        //Thread.sleep(DEFAULT_SLEEP_TIME);
         browser.findElement(By.id("header_j_password")).sendKeys("E123?asd");
     }
 
@@ -69,7 +69,7 @@ public class Login extends BaseClass {
 
     @Then("^The system logs me out$")
     public void theSystemLoggedMeOut() throws Throwable {
-        Thread.sleep(DEFAULT_SLEEP_TIME/2);
+        //Thread.sleep(DEFAULT_SLEEP_TIME/2);
         Assert.assertTrue("confirming the user has been logged out", browser.findElement(By.linkText("Sign In")).isDisplayed());
 
     }
