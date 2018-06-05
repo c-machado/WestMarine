@@ -16,7 +16,7 @@ public class BaseClass {
     public WebDriver getBrowser() {
         if(browser == null) {
             browser = new ChromeDriver();
-            browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            browser.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
         return browser;
     }

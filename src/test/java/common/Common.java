@@ -22,8 +22,6 @@ public class Common extends BaseClass {
 
     @When("^I type \"([^\"]*)\" in the search field$")
     public void iTypeInTheSearchField(String keyword) throws Throwable {
-        Thread.sleep(DEFAULT_SLEEP_TIME/2);
-        System.out.println("key in ckeckout guest"+keyword);
         browser.findElement(By.id("search")).sendKeys(keyword);
     }
 
@@ -40,6 +38,13 @@ public class Common extends BaseClass {
     @After("@web")
     public void afterScenario(){
         browser.quit();
+    }
+
+    @And("^I search for \"([^\"]*)\"$")
+    public void iSearchFor(String keyword) throws Throwable {
+        browser.findElement(By.id("search")).sendKeys(keyword);
+        browser.findElement(By.cssSelector("form[name='search_form'] .button")).click();
+        browser.findElement(By.cssSelector(".total-records")).isDisplayed();
     }
 
 
