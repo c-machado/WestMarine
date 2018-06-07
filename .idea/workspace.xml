@@ -4,11 +4,9 @@
     <list default="true" id="917c0be1-a72e-4924-b11e-b0254ce79fa5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkout.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/Common.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/modules/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modules/Checkout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/checkout.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/common/Common.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/common/Common.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/modules/Checkout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/modules/Checkout.class" afterDir="false" />
     </list>
@@ -29,8 +27,38 @@
       <file leaf-file-name="checkout.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/checkout.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productsList.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/productsList.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/modules/ProductsList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/search.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -38,8 +66,8 @@
       <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/modules/Checkout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+            <state relative-caret-position="484">
+              <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -47,8 +75,17 @@
       <file leaf-file-name="Common.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/common/Common.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="135">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/constants/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -62,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="150">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -118,10 +155,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/register.feature" />
         <option value="$PROJECT_DIR$/src/test/java/modules/Register.java" />
         <option value="$PROJECT_DIR$/src/test/java/modules/Login.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/Common.java" />
+        <option value="$PROJECT_DIR$/src/test/java/base/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/modules/Checkout.java" />
         <option value="$PROJECT_DIR$/src/main/resources/checkout.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/base/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/Common.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/search.feature" />
+        <option value="$PROJECT_DIR$/src/main/resources/productsGrid.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/common/ProductsList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/ProductsList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/modules/ProductsList.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/productsList.feature" />
       </list>
     </option>
   </component>
@@ -136,14 +179,19 @@
     <option name="x" value="3" />
     <option name="y" value="23" />
     <option name="width" value="1400" />
-    <option name="height" value="781" />
+    <option name="height" value="823" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,6 +209,13 @@
               <item name="WestMarine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WestMarine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WestMarine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WestMarine" type="b2602c69:ProjectViewProjectNode" />
@@ -227,19 +282,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/modules" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
       <recent name="modules" />
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -257,12 +310,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: checkout">
+  <component name="RunManager" selected="Cucumber java.Feature: productsList (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Feature: checkout (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <module name="WestMarine" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Feature: checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <module name="WestMarine" />
@@ -274,7 +337,17 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: productsList (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <module name="WestMarine" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Feature: productsList" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <module name="WestMarine" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <extension name="coverage">
@@ -293,33 +366,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-    </configuration>
-    <configuration name="Scenario: Purchase items" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <module name="WestMarine" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Purchase items$&quot;" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WestMarine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -373,19 +419,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestRunner" />
-      <item itemvalue="Cucumber java.Feature: login" />
-      <item itemvalue="Cucumber java.Scenario: Purchase items" />
       <item itemvalue="Cucumber java.Scenario: " />
       <item itemvalue="Cucumber java.Feature: checkout" />
+      <item itemvalue="Cucumber java.Feature: checkout (1)" />
+      <item itemvalue="Cucumber java.Feature: productsList" />
+      <item itemvalue="Cucumber java.Feature: productsList (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: productsList (1)" />
+        <item itemvalue="Cucumber java.Feature: productsList" />
+        <item itemvalue="Cucumber java.Feature: checkout (1)" />
         <item itemvalue="Cucumber java.Feature: checkout" />
         <item itemvalue="Cucumber java.Scenario: " />
-        <item itemvalue="Cucumber java.Scenario: Purchase items" />
-        <item itemvalue="Cucumber java.Feature: login" />
-        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -403,59 +449,60 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2018.05.29 at 17h 53m 02s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 25m 06s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.05.29 at 17h 59m 58s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 38m 00s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.05.29 at 18h 02m 29s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 44m 11s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.05.29 at 18h 03m 23s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 45m 12s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__login - 2018.05.31 at 19h 06m 53s.xml">
-      <configuration name="Feature: login" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 48m 04s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Purchase_items - 2018.06.04 at 17h 47m 35s.xml">
-      <configuration name="Scenario: Purchase items" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 48m 27s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Purchase_items - 2018.06.04 at 17h 49m 06s.xml">
-      <configuration name="Scenario: Purchase items" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__productsList - 2018.06.05 at 19h 48m 54s.xml">
+      <configuration name="Feature: productsList" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ - 2018.06.04 at 18h 03m 02s.xml">
-      <configuration name="Scenario: " configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__productsList_(1) - 2018.06.07 at 09h 17m 33s.xml">
+      <configuration name="Feature: productsList (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ - 2018.06.04 at 18h 03m 26s.xml">
-      <configuration name="Scenario: " configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__productsList_(1) - 2018.06.07 at 09h 18m 17s.xml">
+      <configuration name="Feature: productsList (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__checkout - 2018.06.04 at 18h 04m 20s.xml">
-      <configuration name="Feature: checkout" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__productsList_(1) - 2018.06.07 at 09h 18m 40s.xml">
+      <configuration name="Feature: productsList (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1400" height="781" extended-state="0" />
+    <frame x="3" y="23" width="1400" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32863188" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32531825" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32443258" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7567185" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7509881" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.24328147" side_tool="true" visible="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.24901186" side_tool="true" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -464,55 +511,23 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32863188" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/modules/Register.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/checkout.feature">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/productsList.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/modules/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/modules/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/register.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -701,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.6.0/selenium-chrome-driver-3.6.0.jar!/org/openqa/selenium/chrome/ChromeDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -747,16 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/guestCheckout.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -784,6 +782,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/guestCheckout.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/login.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -791,31 +796,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/Common.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/checkout.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/modules/ProductsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/modules/Checkout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/checkout.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="484">
+          <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="150">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/search.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/modules/ProductsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/productsList.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
