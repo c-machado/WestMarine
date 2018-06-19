@@ -1,5 +1,6 @@
 package modules;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -7,7 +8,12 @@ import cucumber.api.java.en.When;
 import base.BaseClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
+import java.util.Random;
+
 import static constants.Constants.BASE_URL;
 import static constants.Constants.DEFAULT_SLEEP_TIME;
 
@@ -15,27 +21,39 @@ import static constants.Constants.DEFAULT_SLEEP_TIME;
 public class Checkout extends BaseClass {
     Select state;
 
-    @Given("^I'm logged in the west marine home page$")
-    public void iMLoggedInTheWestMarineHomePage() throws Throwable {
-        browser.navigate().to(BASE_URL);
-        browser.findElement(By.linkText("Sign In")).click();
-        browser.findElement(By.id("my_account_list")).isDisplayed();
-        Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_username")).sendKeys("dcmachado@gmail.com");
-        Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_password")).sendKeys("E123?asd");
-        browser.findElement(By.cssSelector("#my_account_list .form.secondary")).click();
-        Assert.assertTrue("Confirming that user is logged in",browser.getPageSource().contains("Hi 123456"));
+
+
+    @And("^I choose a product I want to buy$")
+    public void iChooseAProductIWantToBuy() throws Throwable {
+        /**
+         * Checks if the pagination element is visible.
+         * If it is it looks for a random .pageNum element and clicks it.
+         */
+        if(browser.findElement(By.cssSelector(".pageNums")).isDisplayed()){
+            List<WebElement> pageButtons = browser.findElements(By.cssSelector(".pageNum"));
+            Random rand = new Random();
+            int randomPageNumber = rand.nextInt(pageButtons.size());
+            pageButtons.get(randomPageNumber).click();
+        }
+        /**
+         * Selects an aleatory product from the product list and clicks on it
+         * */
+        List<WebElement> products = browser.findElements(By.cssSelector(".prod_grid"));
+        Random randProducts = new Random();
+        int randomProductNumber = randProducts.nextInt(products.size());
+        products.get(randomProductNumber).click();
     }
+
 
     @And("^I select \"([^\"]*)\"$")
     public void iSelect(String productName) throws Throwable {
-        // I'm searching for the div that has the product Id as an attribute, then inside of it I'm looking
-        // for the actual link that opens the product detail page.
-        // browser.findElement(By.cssSelector("div[data-pcode='" + productId + "'] > .prod_grid > a")).click();
+        /**
+         * I'm searching for the div that has the product Id as an attribute, then inside of it I'm looking
+         * for the actual link that opens the product detail page.
+         * browser.findElement(By.cssSelector("div[data-pcode='" + productId + "'] > .prod_grid > a")).click();
+         */
         browser.findElement(By.xpath("//a[contains(text(), \"" + productName + "\")]")).click();
         Assert.assertTrue("Confirming navigation to product page",browser.getCurrentUrl().contains("buy") );
-
     }
 
     @And("^I select size '(\\d+)'$")
@@ -126,6 +144,7 @@ public class Checkout extends BaseClass {
         browser.findElement(By.id("address.phoneNumber_del")).sendKeys("+1 718 625 4843");
         browser.findElement(By.cssSelector(".edit button.data-set-address"));
     }
+
 
 
 }

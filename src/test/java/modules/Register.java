@@ -21,24 +21,18 @@ public class Register extends BaseClass {
     Date date = new Date();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd-HH-mm-ss");
 
-    @Given("^I'm in WestMarine Homepage$")
-    public void iMInWestMarineHomepage() throws Throwable {
-        browser.navigate().to(BASE_URL);
-    }
 
     @And("^I click to sign in$")
     public void iClickToSignIn() throws Throwable {
         browser.findElement(By.linkText("Sign In")).click();
-
     }
 
-    @And("^I have to choose create option$")
+    @And("^I choose the create option$")
     public void iHaveToChooseCreateOption() throws Throwable {
-        sleep(2000);
         browser.findElement(By.linkText("Create An Account")).click();
     }
 
-    @And("^I fill out the form with correct information$")
+    @And("^I fill out the register form with the correct information$")
     public void iFillOutTheFormWithCorrectInformation() throws Throwable {
         browser.findElement(By.id("register.email")).sendKeys("dcmachadou+"+dateFormat.format(date)+"@gmail.com");
         browser.findElement(By.id("password")).sendKeys("E123?asdf");
@@ -66,7 +60,7 @@ public class Register extends BaseClass {
         browser.findElement(By.cssSelector("#registerWithAddressForm .form.primary")).click();
     }
 
-    @Then("^I'm succesfully registered$")
+    @Then("^I should be registered$")
     public void iMSuccesfullyRegistered() throws Throwable {
         Assert.assertTrue("",browser.getPageSource().contains("Thank you for completing registration!"));
 

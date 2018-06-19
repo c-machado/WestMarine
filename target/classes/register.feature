@@ -2,9 +2,9 @@
 Feature: As a user I want to register in the WestMarine page so I can manage my billing data
 
   Scenario: Successful register
-    Given I'm in WestMarine Homepage
+    Given I am at "home" page
     When I click to sign in
-    And I have to choose create option
-    And I fill out the form with correct information
+    And I choose the create option
+    And I fill out the register form with the correct information
     And I click on the Register button
-    Then I'm succesfully registered
+    Then I should be registered
