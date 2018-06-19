@@ -7,9 +7,10 @@ Feature: Checkout
     And I choose a product I want to buy
 
     Scenario: Purchase items
-
-      #When I add the item to the Shopping cart
-      #And I choose the delivery method
-      #And I fill out the payment method form
-      #And I Submit the order
-      #Then I should see a successful purchase message
+      # Commented because it's necessary to update these steps, since the feature
+      # file was updated with a better structure
+      # When I add the item to the Shopping cart
+      # And I choose the delivery method
+      # And I fill out the payment method form
+      # And I Submit the order
+      # Then I should see a successful purchase message

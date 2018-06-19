@@ -29,7 +29,6 @@ public class Register extends BaseClass {
 
     @And("^I choose the create option$")
     public void iHaveToChooseCreateOption() throws Throwable {
-        sleep(2000);
         browser.findElement(By.linkText("Create An Account")).click();
     }
 

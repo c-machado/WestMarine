@@ -52,13 +52,9 @@ public class Checkout extends BaseClass {
          * for the actual link that opens the product detail page.
          * browser.findElement(By.cssSelector("div[data-pcode='" + productId + "'] > .prod_grid > a")).click();
          */
-        /*
-        * */
         browser.findElement(By.xpath("//a[contains(text(), \"" + productName + "\")]")).click();
         Assert.assertTrue("Confirming navigation to product page",browser.getCurrentUrl().contains("buy") );
     }
-
-
 
     @And("^I select size '(\\d+)'$")
     public void iSelectSize(int size) throws Throwable {

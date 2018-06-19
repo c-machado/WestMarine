@@ -5,7 +5,8 @@ Feature: As a user I want to see the products listed in the page so I can easily
     When I click one of the products
     Then I should be at the product page
 
-  #Scenario: paginator
-   # Scenario: select
-    #  Scenario: filter
+  # These are possible scenarios to implement for this feature
+  # Scenario: paginator
+  # Scenario: select
+  # Scenario: filter
 

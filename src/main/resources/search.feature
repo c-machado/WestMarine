@@ -3,7 +3,6 @@ Feature: As a user I want to search for a product so I can easily find it in the
   Background:
     Given I am at "home" page
 
-
   Scenario: Performing a successful search
     When I type "boat shoes" in the search field
     And I click on the search button

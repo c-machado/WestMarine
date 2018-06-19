@@ -20,4 +20,8 @@ public class BaseClass {
         }
         return browser;
     }
+
+    public void commonElements(){
+
+    }
 }
