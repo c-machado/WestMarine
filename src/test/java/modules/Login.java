@@ -10,6 +10,7 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import base.BaseClass;
+import org.openqa.selenium.WebElement;
 
 import static constants.Constants.BASE_URL;
 import static constants.Constants.DEFAULT_SLEEP_TIME;
@@ -18,22 +19,25 @@ public class Login extends BaseClass {
 
     @Given("^The login form is displayed in the WestMarine Homepage$")
     public void theLoginFormIsDisplayedInTheWestMarineHomepage() throws Throwable {
+
         browser.navigate().to(BASE_URL);
+        if(browser.findElements(By.cssSelector(".user-account-menu")).size() > 0){
+            browser.findElement(By.cssSelector(".user-account-menu")).click();
+            browser.findElement(By.cssSelector("a[href='/logout']")).click();
+        }
         browser.findElement(By.linkText("Sign In")).click();
-        browser.findElement(By.id("my_account_list")).isDisplayed();
+        Assert.assertTrue("Confirming login page is visible",browser.getCurrentUrl().contains("login"));
     }
 
     @When("^I fill out the login form with \"([^\"]*)\" and \"([^\"]*)\" information$")
     public void iFillOutTheLoginFormWithAndInformation(String username, String password) throws Throwable {
-        //Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_username")).sendKeys(username);
-        //Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_password")).sendKeys(password);
+        browser.findElement(By.id("j_username")).sendKeys(username);
+        browser.findElement(By.id("j_password")).sendKeys(password);
     }
 
     @When("^I click on the Sign in button in the login form$")
     public void iClickOnTheSignInButtonInTheLoginForm() throws Throwable {
-        browser.findElement(By.cssSelector("#my_account_list .form.secondary")).click();
+        browser.findElement(By.cssSelector("button.form.secondary")).click();
     }
 
     @Then("^I'm succesfully logged in$")
@@ -45,10 +49,8 @@ public class Login extends BaseClass {
 
     @And("^I fill out the login form with wrong information$")
     public void iFillOutTheLoginFormWithWrongInformation() throws Throwable {
-        //Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_username")).sendKeys("caro@gmail.com");
-        //Thread.sleep(DEFAULT_SLEEP_TIME);
-        browser.findElement(By.id("header_j_password")).sendKeys("E123?asd");
+        browser.findElement(By.id("j_username")).sendKeys("caro@gmail.com");
+        browser.findElement(By.id("j_password")).sendKeys("E123?asd");
     }
 
     @Then("^I should see an error message$")
@@ -61,18 +63,7 @@ public class Login extends BaseClass {
         afterScenario();
     }
 
-    @When("^I click the log out button$")
-    public void iClickTheLogOutButton() throws Throwable {
-        browser.findElement(By.cssSelector(".user-account-menu")).click();
-        browser.findElement(By.cssSelector("a[href='/logout']")).click();
-    }
 
-    @Then("^The system logs me out$")
-    public void theSystemLoggedMeOut() throws Throwable {
-        //Thread.sleep(DEFAULT_SLEEP_TIME/2);
-        Assert.assertTrue("confirming the user has been logged out", browser.findElement(By.linkText("Sign In")).isDisplayed());
-
-    }
 
     @AfterClass
     public void afterScenario(){
