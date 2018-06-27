@@ -1,1 +1,4 @@
 .idea/
+WestMarine.iml
+target/
+npm-debug.log
