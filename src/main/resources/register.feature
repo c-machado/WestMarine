@@ -1,4 +1,3 @@
-@test
 Feature: As a user I want to register in the WestMarine page so I can manage my billing data
 
   Scenario: Successful register
